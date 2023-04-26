@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .container
+{
+  
+
+  
+   background-color: #f1f1f1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+
+}
+.logo
+{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+   
+}
+.blog_title
+{
+    font-size: 1.5rem;
+    display: flex;
+}
+#blogName
+{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 1px 5px;
+    margin-left: 10px;
+}
+.section
+{
+  width: 90%;
+  height: 100%;
+  display: flex;
+}
+
+.box_container
+{
+    margin: 20px 0px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+                0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.main
+{
+    flex: 2.5;
+    margin-right: 10px;
+}
+.sideBar
+{
+    flex: 1;
+    margin-left: 20px;
+}
+      
+.imgBox
+{
+width: 100%;
+}  
+.imgBox img
+{
+width: 100%;
+}
+.box
+{
+margin: 20px;
+}
+.box h1
+{
+text-transform: uppercase;
+font-weight: 400;
+}
+.box p
+{
+margin: 15px 0px;
+font-size: 1.2rem;
+color:rgba(0,0,0,0.6);
+
+}
+
+.link
+{
+display: flex;
+justify-content: space-between;
+margin:0px 20px;
+}
+.link a
+{
+background-color: rgba(0,0,0,0.5);
+color: #fff;
+text-decoration: none;
+padding: 15px 20px;
+margin-bottom: 20px;
+font-size: 1rem;
+}
+
+.shado
+{
+
+margin-bottom: 20px;
+margin-top:20px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+                0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.side1
+{
+padding-bottom: 20px;
+}
+.cardImg
+{
+flex: 1;
+overflow: hidden;
+
+}
+.cardImg img
+{
+width: 100%;
+
+}
+
+.cardContent
+{
+margin: 20px;
+}
+.cardContent h1
+{
+margin-bottom:10px ;
+}
+.cardContent p
+{
+color:rgba(0,0,0,0.6);
+font-size: 1.2rem;
+line-height: 25px;
+}
+
+.side2 h2,#tag
+{
+font-weight: 400;
+padding: 10px;
+border-radius:1px;
+background-color: rgba(0,0,0,0.1);
+}
+.side2 ul li
+{
+list-style: none;
+border-bottom:1px solid rgba(0,0,0,0.1) ;
+padding: 15px 10px;
+display: block;
+display: flex;
+
+}
+.side2 ul li:hover
+{
+background-color:rgba(0,0,0,0.2) ;
+}
+
+
+.sImg img
+{
+width: 50px;
+
+}
+.sContent
+{
+
+margin: 5px;
+}
+#tagName
+{
+list-style: none;
+
+}
+#tagName span
+{
+display: inline-block;
+margin:5px;
+padding: 5px;
+background-color: rgba(0,0,0,0.1);
+font-size: 1rem;
+flex-wrap: wrap;
+}
+.footer
+{
+background-color: rgba(0,0,0,0.6);
+width: 100%;
+}
+.footer .btn
+{
+display: flex;
+}
+.btn a
+{
+text-decoration: none;
+padding: 15px 20px;
+margin: 20px 20px;
+background: #000;
+color: #fff;
+}
+.footer h3
+{
+color: #fff;
+padding: 20px;
+
+letter-spacing: 2px;
+}
+
+
+
+/* Now responsive Time*/
+
+@media screen and (max-width:500px)
+{
+/* navigation responsive */
+.logo
+{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.blog_title
+{
+    display: block;
+    text-align: center;
+}
+
+}
+
+/* section responsive */
+@media screen and (max-width:1200px)
+{
+.section
+ {
+            width: 98%;
+ }
+ .main
+{
+    flex: 1.5;
+    margin-right: 10px;
+}
+.sideBar
+{
+    flex: 1;
+    margin-left: 10px;
+}
+
+
+}
+@media screen and (max-width:900px)
+{
+.section
+{
+    display: block;
+}
+.sideBar
+{
+    margin-left: 0px;
+}
+}
